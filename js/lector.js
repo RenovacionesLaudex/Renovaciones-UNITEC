@@ -60,7 +60,13 @@ function procesarPDFCHistorial(datos) {
 
                     const diferenciaMesesH = calcularDiferenciaMeses(fechaDoc, fechaActual);
 
-                    if (diferenciaMesesH > 1) {
+                    console.log(fechaDoc.getFullYear())
+                    console.log(fechaDoc)
+                    console.log(fechaActual)
+                    console.log(diferenciaMesesH)
+
+
+                    if (diferenciaMesesH > 1 || fechaDoc.getFullYear() !== 2025) {
                         divdatoshistorial.style.display = "none";
                         divhnovig.style.display = "block";
                     }
@@ -153,7 +159,13 @@ function procesarPDFCalculadora(datos) {
 
                     const diferenciaMeses = calcularDiferenciaMeses(fechaDoc, fechaActual);
 
-                    if (diferenciaMeses > 1) {
+                    console.log(fechaDoc.getFullYear())
+                    console.log(fechaDoc)
+                    console.log(fechaActual)
+                    console.log(diferenciaMeses)
+
+
+                    if (diferenciaMeses > 1 || fechaDoc.getFullYear() !== 2025) {
                         divdatoscalculadora.style.display = "none";
                         divcalnov.style.display = "block";
                     }
@@ -209,7 +221,6 @@ function procesarPDFCalculadora(datos) {
                 document.getElementById("alumno").value = alumno;
                 document.getElementById("alumno").readOnly = true;
         
-
             });
         });
     });
