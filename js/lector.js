@@ -165,7 +165,7 @@ function procesarPDFCalculadora(datos) {
                     console.log(diferenciaMeses)
 
 
-                    if (diferenciaMeses > 1 || fechaDoc.getFullYear() !== 2025) {
+                    if (diferenciaMeses > 1 || fechaDoc.getFullYear() !== 2026) {
                         divdatoscalculadora.style.display = "none";
                         divcalnov.style.display = "block";
                     }
