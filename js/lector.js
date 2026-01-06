@@ -66,7 +66,7 @@ function procesarPDFCHistorial(datos) {
                     console.log(diferenciaMesesH)
 
 
-                    if (diferenciaMesesH > 1 || fechaDoc.getFullYear() !== 2025) {
+                    if (diferenciaMesesH > 1 || fechaDoc.getFullYear() !== 2026) {
                         divdatoshistorial.style.display = "none";
                         divhnovig.style.display = "block";
                     }
